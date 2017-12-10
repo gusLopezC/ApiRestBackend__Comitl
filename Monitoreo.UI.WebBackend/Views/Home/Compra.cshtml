@@ -1,0 +1,64 @@
+﻿@model  List<Monitoreo.COMMON.Entidades.Lectura>
+
+
+@{
+    ViewBag.Title = "Compra";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+   
+}
+
+<h2>Compra</h2>
+<div class="alert alert-info" role="alert">
+    <p>Vista de las lecturas obtenidos por el dispositivo</p>
+    <p>Ahora es :@DateTime.Now.ToLongDateString() @DateTime.Now.ToLongTimeString()</p>
+
+</div>
+    <h2>Datos sensor de temperatura Ds18b20</h2>
+   
+    <div id="myfirstchart" style="height: 250px;"></div>
+    
+<table class="table table-responsive table-bordered">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Tipo</td>
+            <td>Lectura</td>
+            <td>Fecha</td>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tbody>
+        <td>@item.ID</td>
+        <td>@item.TipoLectura</td>  
+        <td>@item.Valor</td>
+        <td>@DateTime.Now.ToLongTimeString()</td>
+        </tbody>
+    }
+    </table>
+<script>
+        new Morris.Line({
+            // ID of the element in which to draw the chart.
+            element: 'myfirstchart',
+            // Chart data records -- each entry in this array corresponds to a point on
+            // the chart.
+            data: [
+            @foreach(var item in Model)
+            {
+                @:{ year: '@item.ID', value: @item.Valor },
+            }
+            ],
+            // The name of the data record attribute that contains x-values.
+            xkey: 'year',
+            // A list of names of data record attributes that contain y-values.
+            ykeys: ['value'],
+            // Labels for the ykeys -- will be displayed when you hover over the
+            // chart.
+            labels: ['Value']
+        });
+</script>
+}
+
+
+
+

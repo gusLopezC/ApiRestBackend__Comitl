@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CapasBase", "CapasBase", "{3DBE92CC-8058-4B34-A228-5D1493736CA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{CE7B82B6-AD81-4EE0-B52A-59807292AC9C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Escritorio", "Escritorio", "{75FA3455-B34D-47E1-BA60-71E9C03B98E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoreo.COMMON", "Monitoreo.COMMON\Monitoreo.COMMON.csproj", "{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoreo.DAL.NoSQL", "Monitoreo.DAL.NoSQL\Monitoreo.DAL.NoSQL.csproj", "{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoreo.UI.WebBackend", "Monitoreo.UI.WebBackend\Monitoreo.UI.WebBackend.csproj", "{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoreo.ConexionArduino", "Monitoreo.ConexionArduino\Monitoreo.ConexionArduino.csproj", "{6A565A7F-40A1-4F59-AB2A-A0269A5CB318}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministracionDeDatos", "AdministracionDeDatos\AdministracionDeDatos.csproj", "{F131875D-2FB1-4996-9CDA-34BD30AB818D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL.RestFull", "DAL.RestFull\DAL.RestFull.csproj", "{4A23924A-EB5A-4E99-B1B2-C14026A3D43F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A565A7F-40A1-4F59-AB2A-A0269A5CB318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A565A7F-40A1-4F59-AB2A-A0269A5CB318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A565A7F-40A1-4F59-AB2A-A0269A5CB318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A565A7F-40A1-4F59-AB2A-A0269A5CB318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F131875D-2FB1-4996-9CDA-34BD30AB818D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F131875D-2FB1-4996-9CDA-34BD30AB818D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F131875D-2FB1-4996-9CDA-34BD30AB818D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F131875D-2FB1-4996-9CDA-34BD30AB818D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A23924A-EB5A-4E99-B1B2-C14026A3D43F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A23924A-EB5A-4E99-B1B2-C14026A3D43F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A23924A-EB5A-4E99-B1B2-C14026A3D43F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A23924A-EB5A-4E99-B1B2-C14026A3D43F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDF61FAB-B9A2-4B10-BF83-4AB83F3D2DB7} = {3DBE92CC-8058-4B34-A228-5D1493736CA2}
+		{9F934F28-4F1A-4DA8-9AB5-245B86C4E5B9} = {3DBE92CC-8058-4B34-A228-5D1493736CA2}
+		{1F2FD157-4AB3-46DF-9BAA-4ED21374DB53} = {CE7B82B6-AD81-4EE0-B52A-59807292AC9C}
+		{6A565A7F-40A1-4F59-AB2A-A0269A5CB318} = {75FA3455-B34D-47E1-BA60-71E9C03B98E6}
+		{F131875D-2FB1-4996-9CDA-34BD30AB818D} = {75FA3455-B34D-47E1-BA60-71E9C03B98E6}
+		{4A23924A-EB5A-4E99-B1B2-C14026A3D43F} = {3DBE92CC-8058-4B34-A228-5D1493736CA2}
+	EndGlobalSection
+EndGlobal

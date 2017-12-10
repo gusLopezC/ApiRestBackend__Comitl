@@ -1,0 +1,27 @@
+﻿<Window x:Class="Monitoreo.ConexionArduino.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monitoreo.ConexionArduino"
+        mc:Ignorable="d"
+        Title="Monitoreo" Height="400" Width="375">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label>Puerto:</Label>
+            <ComboBox x:Name="cmbPuerto" Width="200"/>
+            <CheckBox Margin="10,20" Checked="chkConectar_Checked" Unchecked="chkConectar_Unchecked" x:Name="chkConectar">Conectar</CheckBox>
+            <StackPanel Orientation="Horizontal">
+                <Label>Comando</Label>
+                <TextBox x:Name="txtComando" Width="150"></TextBox>
+                <Button x:Name="btnEnviar" Width="70">Enviar</Button>
+            </StackPanel>
+        </StackPanel>
+        <TextBox Grid.Row="1" x:Name="txtblog" IsReadOnly="True" AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Visible"></TextBox>
+    </Grid>
+</Window>

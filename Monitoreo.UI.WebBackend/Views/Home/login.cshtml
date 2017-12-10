@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>login</title>
+</head>
+<body>
+    <div> 
+        <h1>Inicia sesion</h1>
+        @using(Html.BeginForm("validaLogin","Home",FormMethod.Post)){
+        @:Emal: <br />
+        @Html.TextBox("txtEmail") <br />
+        @:Password: <br />
+        @Html.Password("txtPassword") <br />
+        <input type="submit"  name="IniciaSesion" value="Iniciar" class="btn btn-primary" />
+        }
+    </div>
+</body>
+</html>
